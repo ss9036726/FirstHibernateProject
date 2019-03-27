@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
+
+$colorsSeh: (
+    header: #2B2B52,
+    side-bar: #586776,
+    primary: #0A79DF,
+);
+
+@function color($colorName){
+    @return map-get($map: $colorsSeh,$key: $colorName);
+}
+
+html{
+    body{
+        height: 100%;
+    }
+}
+
+body{
+    margin:0;
+    padding: 0;
+}
+
+.sidebar{
+    width: 300px;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: color(side-bar);
+    position: fixed;
+    z-index: 1;
+    font-family: 'Slabo 27px', serif;
+    ul{
+        text-align: center;
+        margin-top: 20px;
+        padding: 10px;
+        list-style: none;
+        li{
+            margin-top: 20px;
+            
+            a{
+                text-decoration: none;
+                font-size: 25px;
+                color: #fff;
+                cursor: pointer;
+                i{
+                    font-size: 35px;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+
+.sidebar{
+    ul{
+        li{
+            a:hover{
+                background-color: transparent;
+                color:white;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.container{
+    position: absolute;
+    margin-left: 350px;
+    text-align: center;
+    padding: 0;
+    font-family: 'Libre Baskerville', serif;
+    h1{
+        color: color(primary);
+    }
+    .jumbotron{
+        
+    }
+}

@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css?family=Slabo+27px");
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville");
+html body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar {
+  width: 300px;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: #586776;
+  position: fixed;
+  z-index: 1;
+  font-family: 'Slabo 27px', serif;
+}
+
+.sidebar ul {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin-top: 20px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.sidebar ul li a i {
+  font-size: 35px;
+  display: inline-block;
+}
+
+.sidebar ul li a:hover {
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.container {
+  position: absolute;
+  margin-left: 350px;
+  margin-top: 0;
+  text-align: center;
+  padding: 0;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.container .jumbotron h1 {
+  color: #0A79DF;
+  margin-bottom: 50px;
+}
+
+.container .jumbotron .row {
+  margin-top: 50px;
+  padding: 10px;
+}
+/*# sourceMappingURL=admin.css.map */
